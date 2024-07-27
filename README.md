@@ -1,3 +1,4 @@
+# Instructions on how to deploy, test, and interact with the contract.
 
 ### **1. Set Up Hardhat Project**
 
