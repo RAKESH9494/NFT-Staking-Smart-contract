@@ -93,11 +93,11 @@ npx hardhat run scripts/deploy.js --network testnet
 
    ```javascript
    const { expect } = require("chai");
-const { ethers, upgrades } = require("hardhat");
+   const { ethers, upgrades } = require("hardhat");
 
-describe("NFTStaking", function () {
-    let NFTStaking, staking, NFT, RewardToken, nft, rewardToken;
-    let owner, user1, user2;
+   describe("NFTStaking", function () {
+       let NFTStaking, staking, NFT, RewardToken, nft, rewardToken;
+       let owner, user1, user2;
 
     beforeEach(async function () {
         [owner, user1, user2] = await ethers.getSigners();
@@ -181,7 +181,7 @@ describe("NFTStaking", function () {
         expect(await staking.RewardPerBlock()).to.equal(2);
     });
 
-});
+   });
 
    ```
 
